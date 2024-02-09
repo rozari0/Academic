@@ -7,6 +7,6 @@ int main() {
 
   float foot = centimeter / 30.48;
 
-  printf("Height is %.0f foot and %d", foot, (int)(foot * 100) % 100);
+  printf("Your Height is %.0f foot and %d inch\n", foot, (int)(foot * 10) % 10);
   return 0;
 }

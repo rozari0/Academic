@@ -6,7 +6,7 @@ int main() {
   printf("Input your height (foot): ");
   scanf("%d", &ft);
 
-  printf("Input your height (inch)");
+  printf("Input your height (inch): ");
   scanf("%d", &inch);
 
   float centimeter = (float)(ft * 30.48) + (float)(inch * 2.54);
