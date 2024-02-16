@@ -5,8 +5,10 @@ int main() {
   printf("Input your height in centimeter: ");
   scanf("%f", &centimeter);
 
-  float foot = centimeter / 30.48;
+  int inch = centimeter * 0.394;
+  int feet = (inch / 12);
+  inch = inch % 12;
 
-  printf("Your Height is %.0f foot and %d inch\n", foot, (int)(foot * 10) % 10);
+  printf("Your Height is %d feet and %d inch\n", feet, inch);
   return 0;
 }
