@@ -19,10 +19,7 @@ int main() {
   temp_bil = temp_bil + MC + SC;
   Total_bill = temp_bil + temp_bil * (5.0 / 100.0);
 
-  float penalty = 20;
-  if (penalty < Total_bill * 0.015) {
-    penalty = Total_bill * 0.015;
-  }
+  float penalty = (20 < Total_bill * 0.015) ? Total_bill * 0.015 : 20;
 
   printf("Total bill without penalty is: %.2f\n", Total_bill);
   printf("Total bill with penalty is: %.2f\n", Total_bill + penalty);
