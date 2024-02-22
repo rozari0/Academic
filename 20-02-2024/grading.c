@@ -36,9 +36,8 @@ int main() {
   float gross_salary = basic + houserent + medical + conveyance + others;
 
   float net_salary = gross_salary - provident_fund;
-
-  printf("Gross Salary is %.2f.\n", gross_salary);
-  printf("Net Salary is %.2f.\n", net_salary);
+  printf("Gross Salary for grade %d is %.2f.\n", grade, gross_salary);
+  printf("Net Salary for grade %d is %.2f.\n", grade, net_salary);
 
   return 0;
 }
