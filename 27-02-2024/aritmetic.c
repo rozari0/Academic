@@ -2,8 +2,7 @@
 
 int main() {
     char operator;
-    int num1, num2;
-    float answer;
+    int num1, num2, answer;
     printf("Input Two number: ");
     scanf("%d %d", &num1, &num2);
 
@@ -30,6 +29,6 @@ int main() {
         answer = num1 / num2;
         break;
     }
-    printf("%d %c %d = %.2f\n", num1, operator, num2, answer);
+    printf("%d %c %d = %d\n", num1, operator, num2, answer);
 
 }
