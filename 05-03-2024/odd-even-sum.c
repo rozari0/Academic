@@ -25,7 +25,7 @@ int main()
     }
   }
   printf("Even Sum of the number range %d - %d is %d\n", num1, num2, evensum);
-  printf("Odd Sum of the number range %d - %d is %d", num1, num2, oddsum);
+  printf("Odd Sum of the number range %d - %d is %d\n", num1, num2, oddsum);
 
   return 0;
 }

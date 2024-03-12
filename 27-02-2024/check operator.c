@@ -14,6 +14,7 @@ int main() {
     } else {
         printf("%c is a special symbol.\n", character);
     }
-
+	
+	
     return 0;
 }
