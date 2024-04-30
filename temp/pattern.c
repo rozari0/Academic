@@ -2,6 +2,7 @@
 
 int main(){
   int num;
+
   printf("Input a number: ");
   scanf("%d", &num);
   int star = 1;
