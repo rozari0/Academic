@@ -10,6 +10,6 @@ int main(){
     first = next;
     next = fibo;
   }
-  printf("%d\n", first);
+  printf("n-th fibonacci number is %d\n", first);
   return  0;
 }
