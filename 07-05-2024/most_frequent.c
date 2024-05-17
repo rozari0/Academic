@@ -1,21 +1,21 @@
 #include <stdio.h>
-#define SIZE 15
+#define SIZE 10
 int main() {
-  int array[SIZE] = {1, 0, 0, 7, 5, 9, 0, 0, 96, 5, 3, 9, 15, 29, 1};
-  int max_element = 0, max = 0, temp;
+  int array[SIZE] = {1, 0, 0, 7, 5, 9, 0, 0, 96, 1};
+  int max_element = 0, max = 0, temp_max;
 
   for (int i = 0; i < SIZE - 1; i++) {
-    temp = 1;
+    temp_max = 1;
     for (int j = i + 1; j < SIZE; j++) {
       if (array[i] == array[j]) {
-        temp++;
+        temp_max++;
       }
     }
-    if (temp > max) {
-      max = temp;
+    if (temp_max > max) {
+      max = temp_max;
       max_element = array[i];
     }
   }
 
-  printf("%d appers %d times.\n", max_element, max);
+  printf("%d is the most frequent element.\n", max_element);
 }
