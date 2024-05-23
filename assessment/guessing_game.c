@@ -18,9 +18,9 @@ int main() {
       printf("Your Score = %d\n", point);
       break;
     } else if (guess < lucky_number && (point != 1)) {
-      puts("High");
-    } else if (guess > lucky_number && (point != 1)) {
       puts("Low");
+    } else if (guess > lucky_number && (point != 1)) {
+      puts("High");
     }
     point--;
   }

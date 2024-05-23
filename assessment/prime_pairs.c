@@ -19,7 +19,7 @@ int main() {
 
   for (int i = 2; i <= number / 2; i++) {
     if (check_prime(i) && check_prime(number - i)) {
-      printf("%2d %2d\n", i, number - i);
+      printf("%d %d\n", i, number - i);
     }
   }
 

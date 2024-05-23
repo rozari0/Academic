@@ -12,7 +12,7 @@ int main() {
     for (int j = i; j < upper; j++) {
       for (int k = j; k <= upper; k++) {
         if (square(i) + square(j) == square(k)) {
-          printf("%2d, %2d, %2d\n", i, j, k);
+          printf("%d, %d, %d\n", i, j, k);
         }
       }
     }
