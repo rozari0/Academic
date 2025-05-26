@@ -19,7 +19,7 @@ int main() {
   node *curr, *head;
   head = NULL;
 
-  // curr = (node *)malloc(sizeof(node));
+  curr = (node *)malloc(sizeof(node));
   curr->value = 10;
   curr->next = head;
   head = curr;
