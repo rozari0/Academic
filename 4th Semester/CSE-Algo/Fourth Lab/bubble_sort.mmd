@@ -1,0 +1,20 @@
+flowchart TD
+    1([Start]) -->I[/Input Array A/]
+    I--> 2["i = 0 
+length = length of A"]
+    2 --> 3{"i < length-1?"}
+    3 -->|YES| 4["is_swapped = False
+j = 0"]
+    3 -->|NO| 11["Return Sorted Array"]
+    4 --> 5{"j < length - i - 1?"}
+    5 -->|Yes| 6{"A[j] > A[j+1]?"}
+    5 -->|No| 8{"is_swapped == False?"}
+    6 -->|Yes| S["Swap A[j] and A[j+1]
+is_swapped = True"]
+    6 -->|No| 7["j = j + 1"]
+    S --> 7
+    7 --> 5
+    8 -->|Yes| 11
+    8 -->|No| 10["i = i + 1"]
+    10 --> 3
+    11 --> 12([End])
