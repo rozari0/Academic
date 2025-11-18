@@ -1,4 +1,3 @@
-
 def print_matrix(row, column):
     matrix = []
     for i in range(row):
@@ -14,4 +13,4 @@ def print_matrix(row, column):
 row = int(input("Input number of row: "))
 column = int(input("Input number of column: "))
 
-print_matrix(row,column)
+print_matrix(row, column)
