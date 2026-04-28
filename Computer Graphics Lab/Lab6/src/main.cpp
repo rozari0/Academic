@@ -1,5 +1,4 @@
 #include <GL/glut.h>
-#include <iostream>
 
 using namespace std;
 
@@ -7,9 +6,6 @@ using namespace std;
 void draw_line(int x1,int Y1,int x2,int y2){
     int dx = abs(x2 - x1);
     int dy = abs(y2 - Y1);
-
-    if (dx != 0)
-        cout << "Slope is: " << (float)(y2 - Y1) / (x2 - x1) << endl;
 
     int sx = (x1 < x2) ? 1 : -1;
     int sy = (Y1 < y2) ? 1 : -1;
@@ -83,10 +79,10 @@ void display() {
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3f(0.0, 0.0, 0.0);
 
-    draw_line(100, 200, 500, 200);
-    draw_line(500, 200, 300, 50);
-    draw_line( 300, 50, 100, 200);
-    draw_cicle(300, 200 + 50, 50);
+    draw_line(100, 300, 500, 300);
+    draw_line(500, 300, 300, 50);
+    draw_line( 300, 50, 100, 300);
+    draw_cicle(300, 300 + 100, 100);
 
     glFlush();
 }
